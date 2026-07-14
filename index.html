@@ -1,12 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>千秋我不见｜DIY教程</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="千秋我不见 DIY 教程站：固件、电路图、材料清单、铜丝图纸与烧录教程。">
+  <title>千秋我不见｜DIY 教程站</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>千秋我不见</h1>
-  <p>这里将用于分享我的DIY项目、图文教程、代码和图纸。</p>
+  <header class="topbar">
+    <a class="brand" href="#/">
+      <span class="brand-mark">千</span>
+      <span><b>千秋我不见</b><small>DIY 教程站</small></span>
+    </a>
+    <button id="menuBtn" class="icon-btn" aria-label="打开目录">☰</button>
+  </header>
+
+  <main id="app"></main>
+
+  <footer>
+    <b>千秋我不见</b>
+    <span>低成本 · 高颜值 · 可复刻的桌面 DIY</span>
+    <p>本站内容用于个人学习与作品复刻，请注意用电、焊接和锂电池安全。</p>
+  </footer>
+
+  <div id="viewer" class="viewer" aria-hidden="true">
+    <button class="viewer-close" aria-label="关闭">×</button>
+    <img id="viewerImg" alt="教程图片放大预览">
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
